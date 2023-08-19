@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  src: url("./../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: 300;
+  color: #777;
+  font-style: 15px;
+  background-color: #131111;
+}
+body blockquote {
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 5rem auto;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #fff;
+}
+body blockquote::before {
+  content: "“";
+  top: 10px;
+  left: -40px;
+}
+body blockquote::after {
+  content: "”";
+  bottom: -30px;
+}
+body blockquote::before, body blockquote::after {
+  font-size: 6rem;
+  position: absolute;
+}
+body blockquote cite {
+  display: block;
+  position: absolute;
+  font-size: 0.8rem;
+  font-style: normal;
+  line-height: 1.2rem;
+  color: #888;
+  top: 120%;
+  padding-left: 70px;
+}
+body blockquote cite::after {
+  content: "📖";
+  font-size: 3.2rem;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  transition: 20s ease;
+}
+body blockquote cite:hover::after {
+  content: "📋";
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
